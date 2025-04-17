@@ -1,0 +1,9 @@
+/* Override Pega “Strong 3” (primary) button format */
+.pzbtnprim, /* generic primary button */
+button.pzbtnprim, /* tag fallback */
+.pzbtnprim3, /* Strong 3 format */
+button.pzbtnprim3 {
+  border-radius: 20px !important;
+  padding: 8px 16px !important;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.1) !important;
+}
