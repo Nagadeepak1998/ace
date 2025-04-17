@@ -1,0 +1,29 @@
+/* Rounded Standard Button */
+.pz-button-standard,
+button.pz-button-standard,
+.pz-button.pz-button-standard {
+  border-radius: 20px !important;
+  padding: 8px 16px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Hover effect */
+.pz-button-standard:hover,
+button.pz-button-standard:hover,
+.pz-button.pz-button-standard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* For the blue Submit button (Strong format) */
+.pz-button-strong,
+button.pz-button-strong,
+.pz-button.pz-button-strong {
+  border-radius: 20px !important;
+  padding: 8px 16px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
