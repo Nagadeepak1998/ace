@@ -1,0 +1,16 @@
+
+
+---
+
+Hi Aptin,
+
+I traced the yellow outline this afternoon.
+
+* It’s coming from the **Action area → Box** format in the **SCE Enterprise** skin.  
+* Someone previously over‑rode the border colour to the yellow you’re seeing.  
+* We can change that colour (or remove the border entirely) at this single spot and it will update every screen that uses the Action‑area container.
+
+Let me know the colour / thickness you’d like and I’ll update the skin and push it with the next cache refresh.
+
+Thanks!  
+Naga
