@@ -1,0 +1,7 @@
+/* Rounded + padded + shadowed buttons */
+.pzbtnstd, button.pzbtnstd,
+.pzbtnprim3, button.pzbtnprim3 {
+  border-radius: 20px !important;
+  padding: 8px 16px !important;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.1) !important;
+}
