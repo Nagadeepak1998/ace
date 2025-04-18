@@ -1,0 +1,97 @@
+Here’s a left‑to‑right “walk‑through” of what each block in the drawing is doing and how everything ties together.  (You don’t have to read it in order—each numbered heading stands on its own.)
+
+---
+
+## 1. PV source: 15 roof‑mounted modules with micro‑inverters
+| Branch | Qty. of IQ8‑PLUS micro‑inverters | Nominal AC current¹ |
+|--------|----------------------------------|---------------------|
+| #1     | 8                                | 8 × 1.35 A = 10.8 A |
+| #2     | 7                                | 7 × 1.35 A = 9.45 A |
+
+* **Module spec (top title block):** 15 × 410 W = 6.15 kW DC  
+* Each IQ8‑PLUS converts the panel’s DC to **240 V, 1‑phase AC** right on the roof, so only AC leaves the array.
+* Trunk cables run between inverters; the “termination cap” shown on the last inverter seals the cable.
+
+¹The IQ8‑PLUS datasheet lists 1.35 A max continuous current.
+
+---
+
+## 2. Home‑run wiring to the roof junction box
+* Both branch circuits drop into a **roof J‑box** (labeled “(N) JUNCTION BOX”) where the two trunk cables land on lugs.
+* From that J‑box a single **¾‑inch EMT** conduit (see “wire tag A” in the table at the bottom) routes the combined output to the next enclosure.
+
+---
+
+## 3. IQ Combiner 4 box
+This enclosure does three jobs:
+
+| Inside the Combiner | Purpose |
+|---------------------|---------|
+| **PV 20 A breaker** | Over‑current protection for the combined PV output. |
+| **IQ Gateway**      | Communications brain: reads the CTs and sends data to Enphase cloud. |
+| **Production CT**   | Measures how much solar is exported. |
+
+The combiner output leaves on **wire tag C** (10 AWG, ¾″ EMT) and heads to the outdoor AC disconnect.
+
+---
+
+## 4. Lockable 60 A AC disconnect (B)
+Required by most AHJs/utility companies. It’s manual, **non‑fused, visible‑open** and can be locked open for service.
+
+---
+
+## 5. Battery subsystem (Enphase Encharge 10)
+* Three “Encharge 3.3” units are drawn (you can see the three rectangles). Together they form a **10 kWh AC‑coupled battery**.
+* Each unit lands on its own **20 A breaker** inside the combiner (shown just left of the battery icons).
+* A “Battery CT” (dashed purple line) tells the Gateway how fast the battery is charging/discharging so it can enforce grid‑export limits.
+* A small **“Battery disconnect” switch** is called out below the units for emergency isolation.
+
+> **No backup power:**  
+> The note under the array explicitly says *“There is no Microgrid Interconnection Device (MID)… battery does **not** provide backup or operate when the grid is down.”*  
+> In other words, this is **grid‑tied only**—if utility power goes away, so does the PV & battery.
+
+---
+
+## 6. Main service panel (E)
+* Existing **200 A bus** with a **150 A main breaker** (they’re “derating” the original 200 A main to 150 A per the note at the bottom so the 120 % rule works).
+* Feeders coming in from:
+  * **40 A breaker** – PV back‑feed
+  * **100 A breaker** – Battery back‑feed
+* The math in the call‑out box at upper‑right shows:  
+  `150 A (main) + 40 A (PV) + 22.6 A + 13.2 A ≈ 226 A`, which is under the 240 A (200 A bus × 120 %) limit.
+
+---
+
+## 7. Utility meter & service conductors
+* A **bi‑directional 1‑Ø 120/240 V meter** records both import and export.
+* Service feed is underground.  
+* “Primary consumption CTs” on the service conductors give whole‑home usage to the Gateway.
+
+---
+
+## 8. Conduit / wire schedule (bottom table)
+| Tag | Conduit | CU Wires | Gauge | Temp rating | Ampacity calc | What it feeds |
+|-----|---------|----------|-------|-------------|---------------|---------------|
+| A   | ¾″ EMT  | 4 + G    | 10 AWG THHN‑2 | 90 °C | 29.12 A | J‑box → Combiner |
+| B   | ¾″ EMT  | 3 + G    | 6 AWG THHN‑2  | 90 °C | 55.0 A | Combiner → AC disconnect |
+| C   | 1″ PVC  | 2 + G    | 8 AWG THWN‑2  | 75 °C | 40.0 A | Battery circuit |
+*(Only the first rows are shown here—the table continues for all circuits.)*
+
+---
+
+## 9. How power flows under normal operation
+```text
+Sunlight → PV module → IQ8 micro‑inverter (AC) 
+         → Branch circuit → Roof J‑box → IQ Combiner (20 A breaker)
+         → 60 A AC disconnect → 40 A breaker in Main Panel
+         → House loads first; surplus exported through meter.
+
+If battery has room to charge:
+Main Panel → 100 A Battery breaker → Encharge 10 (AC‑coupled)
+           → Battery CT tracks charge/discharge.
+```
+
+---
+
+### Need to dive deeper?
+Let me know if you want the calculation details (voltage drop, 690.12 rapid‑shutdown compliance, conductor fill, etc.) or if you’d like me to redraw a simplified schematic without the permit‑style clutter.
