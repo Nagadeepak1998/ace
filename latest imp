@@ -1,43 +1,23 @@
-Great! Here's the **step-by-step order** you can follow to locate the black border setting and either remove or change it in **Pega Dev Studio**:
+Ah perfect, thanks for clarifying! Here's a **simple step-by-step instruction** format for the black bar removal task that you can copy into your document:
 
 ---
 
-### **Task: Remove or Change the Black Border under Column Headings**
+### 🛠 Task: Remove the Black Bar Under Table Headers
 
-#### **Where it’s located:**
+**Follow these steps exactly:**
 
-1. **Open Dev Studio**
-2. Navigate to:  
-   **Records > User Interface > Skin > Open `SCEEnterprise`**
-3. Go to the **`Component styles`** tab.
-4. In the left panel, expand **Layouts > Trees and tables**
-5. Click on the **`Default`** format (you can also repeat the same for `Spreadsheet` if needed).
-6. Click on the **`Column headings`** tab on the right side.
-7. Scroll to the **`Border`** section.
-
----
-
-### **What you need to do:**
-
-#### **Option 1: To REMOVE the black line**
-- **Check** the box: **“Use default border for this format”**
-
-> This removes the custom black border and falls back to a neutral default (which removes the thick/dark bar).
-
-#### **Option 2: To CHANGE the color**
-1. **Uncheck** “Use default border for this format”
-2. Select **“Specify styles”**
-3. Under **Border settings**, update the bottom border color to something lighter like:
-   - `#D3D3D3` (light grey)
-   - `#FFFFFF` (white)
+| Step | What to Click | What to Look For |
+|------|----------------|------------------|
+| 1 | Go to **Dev Studio** ▶ **Records** ▶ **User Interface** ▶ **Skin** ▶ Open `SCE Enterprise` |
+| 2 | In the Skin rule, go to the **Component styles** tab |
+| 3 | In the left panel, expand **Layouts** ▶ **Trees and Tables** |
+| 4 | Click on the **Default** format under “My Formats” |
+| 5 | Click on the **Column headings** tab |
+| 6 | Expand the **Border** section |
+| 7 | ✅ Enable the checkbox for **Use default border for this format** |
+| 8 | 📸 You’ll see the black bar under “Color | Amount | Label” is now removed in the preview on the right |
+| 9 | Click **Save** at the top-right |
+| 10 | 🔁 Clear the cache if needed (Ctrl + Shift + R or use "Configure ▶ System ▶ Release ▶ Clear Caches") to see changes live |
 
 ---
 
-### **After Changes**
-- Click **Submit** to save.
-- Click **Save** on the skin rule.
-- **Clear the cache**:  
-  Go to **Configure > System > Release > Clear Caches > Static Content + Rule**
-- Refresh the portal using **Ctrl+Shift+R**.
-
--
