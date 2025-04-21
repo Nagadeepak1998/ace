@@ -1,0 +1,23 @@
+### Task 1 Remove the dark “black” bar (Action‑area container)  
+Follow these clicks exactly; stop when you’ve saved. We’ll test before moving to Task 2.
+
+| Step | What to click | What to look for |
+|------|---------------|------------------|
+| 1 | **Dev Studio ► Records ► User Interface ► Skin** | Open **SCE Enterprise** (or the skin you’re editing). **Check out** if it isn’t already. |
+| 2 | In the skin rule, go to **Component styles** tab | Left tree opens. |
+| 3 | Expand **Containers** ► click **Action area** | Right‑hand pane shows three sub‑tabs: **Header / Content / Box**. |
+| 4 | Click the **Content** tab | This controls the panel where the dark bar appears. |
+| 5 | Expand **Background** | You’ll see **Use mixin → Work area background** (or a colour swatch). |
+| 6 | Un‑tick **Use mixin** | The colour picker activates. |
+| 7 | **Set Colour:** `#FFFFFF` (white) or `transparent` | White = no dark bar; transparent inherits page background. |
+| 8 | Expand **Borders** (still in Content tab) | If **Bottom border** shows `1 px solid #000000`, set it to **none**. |
+| 9 | Click **Submit** (bottom of pane) | Saves the format. |
+|10 | **Save** the skin rule, then **Check in** | Change is now in the rulebase. |
+|11 | **Clear cache** (Configure ► System ► Release ► Clear Caches ► Static Content + Rule) | Refresh your portal page (Ctrl‑Shift‑R). The dark bar should be gone. |
+
+---
+
+#### What to tell Aptin when this is done  
+> “I removed the dark bar by clearing the background and bottom border on the Action‑area container in the skin. It’s white now; let me know if you prefer another colour.”
+
+Once you confirm the bar is gone, ping me and we’ll do Task 2: replace the yellow focus outline.
