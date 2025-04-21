@@ -1,0 +1,43 @@
+Great! Here's the **step-by-step order** you can follow to locate the black border setting and either remove or change it in **Pega Dev Studio**:
+
+---
+
+### **Task: Remove or Change the Black Border under Column Headings**
+
+#### **Where it’s located:**
+
+1. **Open Dev Studio**
+2. Navigate to:  
+   **Records > User Interface > Skin > Open `SCEEnterprise`**
+3. Go to the **`Component styles`** tab.
+4. In the left panel, expand **Layouts > Trees and tables**
+5. Click on the **`Default`** format (you can also repeat the same for `Spreadsheet` if needed).
+6. Click on the **`Column headings`** tab on the right side.
+7. Scroll to the **`Border`** section.
+
+---
+
+### **What you need to do:**
+
+#### **Option 1: To REMOVE the black line**
+- **Check** the box: **“Use default border for this format”**
+
+> This removes the custom black border and falls back to a neutral default (which removes the thick/dark bar).
+
+#### **Option 2: To CHANGE the color**
+1. **Uncheck** “Use default border for this format”
+2. Select **“Specify styles”**
+3. Under **Border settings**, update the bottom border color to something lighter like:
+   - `#D3D3D3` (light grey)
+   - `#FFFFFF` (white)
+
+---
+
+### **After Changes**
+- Click **Submit** to save.
+- Click **Save** on the skin rule.
+- **Clear the cache**:  
+  Go to **Configure > System > Release > Clear Caches > Static Content + Rule**
+- Refresh the portal using **Ctrl+Shift+R**.
+
+-
