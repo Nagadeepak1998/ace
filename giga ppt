@@ -1,0 +1,126 @@
+# Comprehensive Summary of GIPT Project Meeting
+
+## Meeting Overview
+This meeting reviewed several user stories for the Grid Interconnection Processing Tool (GIPT) built on the Pega platform for Southern California Edison (SCE). The focus was on reviewing modifications to various screens, workflows, and validation rules, particularly for handling Limited Generation Profile (LGP) and Unexpected Line Events (ULE) cases.
+
+## User Stories Discussed
+
+### 1. User Story #148076: Interconnection Agreement Modifications
+- **Purpose**: Allow users to make LGP-related modifications when interconnection agreement hasn't been executed
+- **Key Implementation Detail**: Files must be attached via local action rather than the attachment screen
+- **Functionality**:
+  - Includes specific guidance language for LGP section
+  - Manufacturer and model number information entered through local action
+  - No email triggers if there's no change in circuit ID or feeder ID
+
+### 2. ULE Modifications (User Story #15000)
+- **Functionality**: Similar workflow to LGP modifications but for the ULE section
+- **Implementation**: Users can edit ULE section with file attachments happening through local action
+
+### 3. Field Engineer Task Flow
+- **Workflow**: Triggered after customer uploads a new profile using "Update LGP Profile" task
+- **Engineer Review Process**:
+  - Engineers receive task with guided language showing latest proposed values
+  - Engineers select "Yes" or "No" to approve/reject the profile
+  - If "Yes" selected: 
+    - Editable email triggered to project contacts
+    - CC includes engineer and adviser
+    - Email subject contains project number and "Update LGP"
+    - Email content confirms acceptance
+  - If "No" selected:
+    - Comment box appears (will be made mandatory)
+    - Task returns to customer
+    - Email notification includes rejection message with engineer's comments
+
+### 4. User Story #15129: Post-2-Rejections Process
+- **Workflow**: Special handling after engineer rejects profile twice
+- **Process Flow**:
+  - Customer submits profile → Engineer rejects → Customer resubmits → Engineer rejects again
+  - On third review, engineer gets additional questions
+  - LGP configuration limits question presented
+  - If "No" selected, additional question "Will the customer proceed with NTP?" appears
+  - If NTP question answered "No", email triggers to GICD advisers
+  - Comments mandatory when "No" selected (visible to adviser in next task)
+
+### 5. Adviser Task Flow
+- **Task Creation**: Created when engineer selects "No" to NTP question
+- **Adviser Interface**:
+  - Shows same task name as engineer
+  - Displays guidance language about engineer's determination
+  - Shows latest proposed values
+  - Displays engineer's comments
+  - Option to inform customer offline or cancel LGP manually via local action
+- **Task Completion**: When adviser submits, task closes and customer notification is triggered
+
+### 6. Initial Review Screens
+- **Screen Additions**: Two new validation questions
+  - "Is the inverter on the approved certified list?"
+  - "Is the PCS on the approved certified list?"
+- **Logic Implementation**:
+  - Secondary questions appear if "No" selected for either question
+  - Pass/fail determination based on various combinations:
+    - Pass scenarios: Yes/Yes, No/Yes with secondary Yes, etc.
+    - Fail scenarios: No for all questions, certain other combinations
+
+### 7. Screen D Functionality
+- **New Question**: "Project applied for LGP" (Yes/No)
+- **Conditional Display**: Additional options only visible for LGP=Yes cases
+- **Fields**:
+  - Guidance showing max LGP value
+  - Control nameplate (read-only, pulled from case submittal)
+  - Maximum LGP value (input field)
+  - Total net capacity of aggregate generation (calculated field)
+- **Discussion**: Concerns raised about handling existing projects on the same transformer
+
+### 8. Screen J Functionality
+- **Fields**:
+  - "Project applied for LGP" question
+  - Max LGP value (populated from Screen D)
+  - TCS control nameplate (from gate submittal)
+  - Total gross nameplate rating
+- **Validation**: Project fails if max LGP value exceeds threshold
+
+### 9. Screen J Label Issue
+- **Problem Identified**: Label displays "11" but should be "30" to match tariff requirements
+- **Current State**: 
+  - LGP calculations correctly use "30"
+  - Non-LGP cases still use "11" in calculations
+- **Discussion**:
+  - Tariff specifies "30" should be used
+  - Changing just the label without updating calculations would cause confusion
+  - More comprehensive fix needed affecting back-end logic
+- **Resolution**: Naga committed to discussing with Sasi to implement a comprehensive fix for all cases
+
+### 10. CSV File Validation
+- **Functionality**: System validates uploaded files are in CSV format
+- **Behavior**: Error message appears if non-CSV file is uploaded
+- **Confirmation**: Feature is working as expected
+
+### 11. Comment Box Improvements
+- **Decisions**:
+  - Make comment box mandatory only when "No" is selected
+  - Remove comment box when "Yes" is selected
+  - Move comment box above email content for better workflow
+  - Ensure comments flow into notification emails
+
+## Action Items
+
+1. **UI Improvements**:
+   - Reposition comment box above email for better usability
+   - Make comment box mandatory for "No" selections only
+   - Remove comment box for "Yes" selections
+
+2. **Screen J Fix**:
+   - Naga will talk to Sasi about fixing the label issue (changing "11" to "30")
+   - Implementation needs to address both the label and back-end calculations
+   - Fix should apply to all cases, not just LGP projects
+
+3. **Email Content Updates**:
+   - Implement specific email templates for various notification scenarios
+   - Ensure engineer comments are properly reflected in notification emails
+
+4. **Validation Logic**:
+   - Implement complex pass/fail logic for initial review screens
+   - Ensure proper field validation for LGP-specific screens
+
+The meeting demonstrated significant progress on implementing the requested workflows and validations for LGP and ULE modifications. The team identified one key issue (Screen J label) requiring further attention, with Naga taking responsibility for coordinating with Sasi to implement a comprehensive fix.
