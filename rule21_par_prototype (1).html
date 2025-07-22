@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rule 21 PAR – Prototype Showcase</title>
+  <style>
+    :root{
+      --primary-color:#FFD046;
+      --secondary-color:#006A53;
+      --dark-color:#0b0b0c;
+      --light-bg:#f5f5f5;
+    }
+    body{margin:0;font-family:Arial,sans-serif;background:var(--light-bg);color:#333;}
+    header{background:var(--dark-color);color:#fff;text-align:center;padding:50px 20px;}
+    header h1{margin:0;font-size:2.5rem;}
+    header nav{margin-top:20px;}
+    header nav a{color:var(--primary-color);margin:0 15px;text-decoration:none;font-weight:bold;}
+    header nav a:hover{color:#e6be3e;}
+    section{max-width:1100px;background:#fff;margin:40px auto;border-radius:8px;padding:30px;box-shadow:0 2px 8px rgba(0,0,0,0.1);}    
+    section h2{margin-top:0;font-size:1.8rem;color:var(--secondary-color);border-bottom:3px solid var(--primary-color);padding-bottom:6px;}
+    /* Shared styles for forms */
+    .form-group{margin-bottom:15px;}
+    .form-group label{display:block;font-weight:bold;margin-bottom:5px;}
+    .form-group input, .form-group select, .form-group textarea{width:100%;padding:8px;border:1px solid #ccc;border-radius:4px;box-sizing:border-box;}
+    .inline-group{display:flex;gap:20px;}
+    .inline-group .form-group{flex:1;}
+    .checkbox-group, .radio-group{display:flex;align-items:center;margin-bottom:10px;}
+    .checkbox-group input, .radio-group input{margin-right:8px;transform:scale(1.2);}
+    .btn{display:inline-block;padding:12px 24px;border-radius:4px;font-weight:bold;text-decoration:none;border:none;cursor:pointer;}
+    .btn-primary{background:var(--primary-color);color:var(--dark-color);}
+    .btn-primary:hover{background:#e6be3e;}
+    .btn-secondary{border:2px solid var(--primary-color);color:var(--primary-color);}
+    .btn-secondary:hover{background:var(--primary-color);color:var(--dark-color);}
+    .btn-danger{background:#e55454;color:#fff;}
+    .btn-danger:hover{background:#c24343;}
+    .status{font-size:0.9rem;font-weight:bold;color:var(--secondary-color);margin-left:auto;}
+    /* Cards for Review section */
+    .card{background:#fafafa;border:1px solid #ddd;border-radius:6px;padding:20px;margin-bottom:20px;}
+    .card h3{margin-top:0;color:var(--secondary-color);border-bottom:2px solid var(--primary-color);padding-bottom:4px;display:flex;align-items:center;}
+    @media(max-width:600px){.inline-group{flex-direction:column;}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rule 21 PAR – Prototype Showcase</h1>
+    <nav>
+      <a href="#request">Request Form</a>
+      <a href="#review">Review</a>
+      <a href="#complete">Complete</a>
+    </nav>
+  </header>
+
+  <!-- Request Form Prototype -->
+  <section id="request">
+    <h2>Request Submittal</h2>
+    <p>This section demonstrates the single‑page customer form with the five required sections. Scroll to complete the form. Help icons and quick‑links can be added later.</p>
+    <form>
+      <!-- Customer Info -->
+      <div class="card">
+        <h3>Customer Information</h3>
+        <div class="form-group">
+          <label for="cust-name">Customer Name *</label>
+          <input type="text" id="cust-name" required>
+        </div>
+        <div class="form-group">
+          <label for="cust-billing">Billing Address (Street, City, State, ZIP) *</label>
+          <input type="text" id="cust-billing" required>
+        </div>
+        <div class="form-group">
+          <label for="contact-name2">Contact Name</label>
+          <input type="text" id="contact-name2">
+        </div>
+        <div class="inline-group">
+          <div class="form-group">
+            <label for="contact-phone2">Contact Phone *</label>
+            <input type="tel" id="contact-phone2" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-email2">Contact Email *</label>
+            <input type="email" id="contact-email2" required>
+          </div>
+        </div>
+      </div>
+      <!-- Project Info -->
+      <div class="card">
+        <h3>Project Information</h3>
+        <div class="form-group">
+          <label>Project Type *</label>
+          <div class="radio-group"><input type="radio" name="proj-type2" required><label>New Generating Facility</label></div>
+          <div class="radio-group"><input type="radio" name="proj-type2"><label>Increase / Modification</label></div>
+        </div>
+        <div class="form-group">
+          <label>Export Status *</label>
+          <div class="radio-group"><input type="radio" name="export2" required><label>Export</label></div>
+          <div class="radio-group"><input type="radio" name="export2"><label>Non‑Export</label></div>
+        </div>
+      </div>
+      <!-- Generation Technology -->
+      <div class="card">
+        <h3>Generation Technology</h3>
+        <div class="form-group">
+          <label>Technologies Included</label>
+          <div class="checkbox-group"><input type="checkbox"><label>PV</label></div>
+          <div class="checkbox-group"><input type="checkbox"><label>Battery</label></div>
+          <div class="checkbox-group"><input type="checkbox"><label>Fuel Cell</label></div>
+          <div class="checkbox-group"><input type="checkbox"><label>Wind</label></div>
+          <div class="checkbox-group"><input type="checkbox"><label>Hydro</label></div>
+          <div class="checkbox-group"><input type="checkbox"><label>Other</label></div>
+        </div>
+        <div class="inline-group">
+          <div class="form-group">
+            <label for="cap2">Total Nameplate Capacity (kW)</label>
+            <input type="number" id="cap2">
+          </div>
+          <div class="form-group">
+            <label for="fuel2">Primary Fuel Type</label>
+            <input type="text" id="fuel2">
+          </div>
+        </div>
+      </div>
+      <!-- Other Info -->
+      <div class="card">
+        <h3>Other Information</h3>
+        <div class="form-group">
+          <label for="loc2">Project Location (Street/Parcel) *</label>
+          <input type="text" id="loc2" required>
+        </div>
+        <div class="inline-group">
+          <div class="form-group">
+            <label for="city2">City *</label>
+            <input type="text" id="city2" required>
+          </div>
+          <div class="form-group">
+            <label for="county2">County *</label>
+            <input type="text" id="county2" required>
+          </div>
+          <div class="form-group">
+            <label for="zip2">ZIP Code *</label>
+            <input type="text" id="zip2" required>
+          </div>
+        </div>
+        <div class="inline-group">
+          <div class="form-group">
+            <label for="lat2">Latitude *</label>
+            <input type="number" id="lat2" required>
+          </div>
+          <div class="form-group">
+            <label for="lon2">Longitude *</label>
+            <input type="number" id="lon2" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="voltage2">Service Voltage *</label>
+          <input type="text" id="voltage2" required>
+        </div>
+        <div class="form-group">
+          <label for="site2">Site Map Attachment *</label>
+          <input type="file" id="site2" required>
+        </div>
+      </div>
+      <!-- Signature & Payment -->
+      <div class="card">
+        <h3>Signature & Payment</h3>
+        <p>An invoice will be issued upon submission. Offline payment is required before processing.</p>
+        <div class="form-group">
+          <label for="legal2">Legal Name of Applicant *</label>
+          <input type="text" id="legal2" required>
+        </div>
+        <div class="inline-group">
+          <div class="form-group">
+            <label for="sig2">Signer Name *</label>
+            <input type="text" id="sig2" required>
+          </div>
+          <div class="form-group">
+            <label for="title2">Signer Title *</label>
+            <input type="text" id="title2" required>
+          </div>
+        </div>
+        <div class="inline-group">
+          <div class="form-group">
+            <label for="date2">Signature Date *</label>
+            <input type="date" id="date2" required>
+          </div>
+          <div class="form-group">
+            <label for="phone2">Signer Phone *</label>
+            <input type="tel" id="phone2" required>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:20px;">
+        <button type="submit" class="btn btn-primary">Submit Request</button>
+        <button type="reset" class="btn btn-secondary">Clear Form</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Review Prototype -->
+  <section id="review">
+    <h2>Review Request (Analyst View)</h2>
+    <p>This section depicts how an analyst reviews a submitted request. Fields are read‑only, statuses indicate completeness, and actions allow approving, returning, or cancelling.</p>
+    <!-- Customer & Project Summary Card -->
+    <div class="card">
+      <h3>Customer & Project Summary <span class="status">Complete</span></h3>
+      <div class="inline-group">
+        <div class="form-group">
+          <label>Customer Name</label>
+          <input type="text" value="ABC Solar Co." readonly>
+        </div>
+        <div class="form-group">
+          <label>Project Type</label>
+          <input type="text" value="New Generating Facility" readonly>
+        </div>
+        <div class="form-group">
+          <label>Export Status</label>
+          <input type="text" value="Export" readonly>
+        </div>
+      </div>
+      <div class="inline-group">
+        <div class="form-group">
+          <label>Project Location</label>
+          <input type="text" value="123 Main St, Riverside, CA" readonly>
+        </div>
+        <div class="form-group">
+          <label>Latitude / Longitude</label>
+          <input type="text" value="34.0195 / -117.371" readonly>
+        </div>
+      </div>
+    </div>
+    <!-- Technology Card -->
+    <div class="card">
+      <h3>Technology & Attachments <span class="status">Complete</span></h3>
+      <div class="inline-group">
+        <div class="form-group">
+          <label>Generation Technologies</label>
+          <input type="text" value="PV – 500 kW; Battery – 250 kW" readonly>
+        </div>
+        <div class="form-group">
+          <label>Service Voltage</label>
+          <input type="text" value="12 kV, 3Ø" readonly>
+        </div>
+        <div class="form-group">
+          <label>Site Map</label>
+          <a href="#" style="display:block;margin-top:4px;color:var(--secondary-color);text-decoration:underline;">View attachment</a>
+        </div>
+      </div>
+    </div>
+    <!-- Review Actions -->
+    <div class="card">
+      <h3>Review Actions <span class="status">Pending</span></h3>
+      <p>Upload the engineer’s report and provide comments. Requests with unpaid invoices should remain on hold.</p>
+      <div class="form-group">
+        <label for="report3">Attach Pre‑Application Report (PDF)</label>
+        <input type="file" id="report3" accept=".pdf">
+      </div>
+      <div class="form-group">
+        <label for="comments3">Comments / Deficiencies</label>
+        <textarea id="comments3" rows="4" placeholder="Enter any feedback for the applicant…"></textarea>
+      </div>
+      <div style="text-align:center; margin-top:10px;">
+        <button class="btn btn-primary">Approve & Send Report</button>
+        <button class="btn btn-secondary">Return to Customer</button>
+        <button class="btn btn-danger">Cancel Request</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Prototype -->
+  <section id="complete">
+    <h2>Completion</h2>
+    <p>This section shows the confirmation page sent to customers once their report is ready and payment has been verified.</p>
+    <div class="card" style="text-align:center;">
+      <h3>Thank You!</h3>
+      <p>Your Rule 21 Pre‑Application Report has been prepared and is ready for download. A secure link has been sent to the applicant’s email.</p>
+      <p>Case ID: <strong>R PAR‑00001</strong></p>
+      <button class="btn btn-primary">Download Report</button>
+    </div>
+  </section>
+</body>
+</html>
