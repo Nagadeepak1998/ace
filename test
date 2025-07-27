@@ -1,0 +1,5 @@
+Test-NetConnection google.com -Port 80     # HTTP
+Test-NetConnection google.com -Port 443    # HTTPS
+Test-NetConnection your-vps.com -Port 22   # SSH
+Test-NetConnection your-vps.com -Port 3389 # RDP
+Test-NetConnection your-vps.com -Port 4444 # Custom port (e.g., reverse shell) idhi try cheyi okkokkati power shell lo?
