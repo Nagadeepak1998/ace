@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 14-922: Rule 21 Pre-Application Report Request (Pages 4-10)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            line-height: 1.2;
+            margin: 40px;
+            color: black;
+        }
+        .header {
+            text-align: right;
+            font-size: 10px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 12px;
+            margin: 20px 0 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        .checkbox {
+            margin-right: 5px;
+        }
+        .form-field {
+            margin: 8px 0;
+        }
+        .underline {
+            border-bottom: 1px solid black;
+            display: inline-block;
+            min-width: 200px;
+            margin: 0 5px;
+        }
+        .subsection {
+            margin-left: 20px;
+        }
+        .generation-table {
+            margin: 10px 0;
+        }
+        .generation-table td {
+            text-align: center;
+        }
+        .page-break {
+            page-break-before: always;
+            margin-top: 40px;
+        }
+        .footer-text {
+            font-size: 9px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page 4 -->
+    <div class="header">
+        Form 14-922 4<br>
+        July 2016
+    </div>
+
+    <div class="section-title">3. PRE-APPLICATION REQUESTED SERVICE</div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Report Name</th>
+                <th>Processing Time (Business Days)</th>
+                <th>Selection</th>
+                <th>Application Fee</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Standard Pre-Application Report</td>
+                <td>10<sup>2</sup></td>
+                <td>☐</td>
+                <td>$300</td>
+            </tr>
+            <tr>
+                <td>Enhanced Pre-Application Report – Primary Service Package</td>
+                <td>10<sup>3</sup></td>
+                <td>☐</td>
+                <td>$225</td>
+            </tr>
+            <tr>
+                <td>Enhanced Pre-Application Report – Behind the Meter Package</td>
+                <td>30</td>
+                <td>☐</td>
+                <td>$800</td>
+            </tr>
+            <tr>
+                <td>Combined Enhanced Pre-Application Report - Primary Service and Behind the Meter Interconnection Packages</td>
+                <td>30</td>
+                <td>☐</td>
+                <td>$1,025</td>
+            </tr>
+            <tr>
+                <td>Processing Fee if Standard Pre-Application Report Request is not submitted with either Enhanced Pre-Application Report Packages<sup>4</sup></td>
+                <td>N/A</td>
+                <td>☐</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td><strong>Total Pre-Application Report Request Fee</strong></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="section-title">4. PROJECT INFORMATION</div>
+    
+    <div class="subsection">
+        <strong>A. Project Type</strong><br><br>
+        This Pre-Application Report Request is for (check only one):<br>
+        ☐ A proposed new Generating Facility.<br>
+        ☐ An increase in the generating capacity or a Material Modification of an existing Generating Facility.<br><br>
+        
+        This Pre-Application Report Request is for (check only one):<br>
+        ☐ A project that will export power to the SCE system.<br>
+        ☐ A project that will not export power to the SCE system.<br><br>
+        
+        <strong>B. Applicant provides the following information (when available):</strong><br><br>
+        Approximate proposed Point of Interconnection. The proposed Point of
+    </div>
+
+    <div class="footer-text">
+        <sup>2</sup> Timeline is 30 Business Days if requested with Behind the Meter Interconnection Package<br>
+        <sup>3</sup> Timeline is 30 Business Days if requested with Behind the Meter Interconnection Package<br>
+        <sup>4</sup> The Enhanced Pre-Application Report Request shall be submitted in parallel with the Standard Pre-Application Report. Requests that exclude the Standard Pre-Application Report and select only one or both of the Enhanced Pre-Application Report packages shall be assessed an additional non-refundable fee of $100
+    </div>
+
+    <!-- Page 5 -->
+    <div class="page-break">
+        <div class="header">
+            Form 14-922 5<br>
+            July 2016
+        </div>
+
+        <p>Interconnection shall be defined by latitude and longitude, site map, street address, utility equipment number (e.g. pole number), meter number, account number or some combination of the above sufficient to clearly identify the location of the Point of Interconnection. In the case of an existing Generating Facility, the name and specific location, including the county, of the existing Generating Facility. When requesting the Behind the Meter Interconnection Package, request must include meter number and account number;</p>
+
+        <div class="form-field">Project Name: <span class="underline"></span></div>
+        <div class="form-field">Project Location:</div>
+        <div class="form-field">Street Address: <span class="underline"></span></div>
+        <div class="form-field">City: <span class="underline"></span></div>
+        <div class="form-field">County: <span class="underline"></span></div>
+        <div class="form-field">Zip Code: <span class="underline"></span></div>
+        <div class="form-field">Latitude (in degrees/minutes/seconds OR 6 decimal places): <span class="underline"></span></div>
+        <div class="form-field">Longitude (in degrees/minutes/seconds OR 6 decimal places): <span class="underline"></span></div>
+        <div class="form-field">Utility Equipment Number [nearest one (ex. pole number 1234567E, transformer number P1234567)]: <span class="underline"></span></div>
+        <div class="form-field">Meter Number<sup>5</sup> (ex. V123N-456789): <span class="underline"></span></div>
+        <div class="form-field">Account Number<sup>5</sup> (ex. 123456789): <span class="underline"></span></div>
+        <div class="form-field">Proposed Nominal Service Voltage and Configuration: <span class="underline"></span></div>
+        <div class="form-field">(Examples: 240V 3-wire 1∅, 480V 4-wire 3∅, 12kV 3-wire 1∅, etc.)</div>
+
+        <div class="subsection">
+            <strong>C. Attach copy of site map for proposed project. Site map should show:</strong>
+            <ul>
+                <li>True north</li>
+                <li>Proposed project location, including general area of project</li>
+                <li>Proposed service point location</li>
+                <li>Major roads, streets and/or highways</li>
+            </ul>
+        </div>
+
+        <div class="footer-text">
+            <sup>5</sup> Information required for Behind the Meter Interconnection Package
+        </div>
+    </div>
+
+    <!-- Page 6 -->
+    <div class="page-break">
+        <div class="header">
+            Form 14-922 6<br>
+            July 2016
+        </div>
+
+        <div class="section-title">D. Generation Technology</div>
+
+        <div class="subsection">
+            <strong>Combustion Engine Generation</strong>
+            <table class="generation-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Size (Total kW)</th>
+                        <th>Fuel Type (N-Gas, Diesel, Biogas)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>☐ Reciprocating Engine</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>☐ Gas Turbine</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>☐ Other (Specify)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <strong>Inverter Based Generation</strong>
+            <table class="generation-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Size (Total kW)</th>
+                        <th>Fuel Type (N-Gas, Diesel, Biogas)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>☐ Photovoltaic</td>
+                        <td></td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>☐ Battery</td>
+                        <td></td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>☐ Fuel Cell</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>☐ Other (Specify)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <strong>Other Generation</strong>
+            <table class="generation-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Size (Total kW)</th>
+                        <th>Fuel Type (N-Gas, Diesel, Biogas)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>☐ Wind</td>
+                        <td></td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>☐ Steam Turbine</td>
+                        <td></td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>☐ Hydro Turbine</td>
+                        <td></td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>☐ Other (Specify)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Page 7 -->
+    <div class="page-break">
+        <div class="header">
+            Form 14-922 7<br>
+            July 2016
+        </div>
+
+        <div class="section-title">5. OTHER INFORMATION</div>
+
+        <p>Name, address, telephone number, and e-mail address of Applicant (primary person who will be contacted);</p>
+
+        <div class="form-field">Name: <span class="underline"></span></div>
+        <div class="form-field">Title: <span class="underline"></span></div>
+        <div class="form-field">Company Name: <span class="underline"></span></div>
+        <div class="form-field">Street Address: <span class="underline"></span></div>
+        <div class="form-field">City, State: <span class="underline"></span></div>
+        <div class="form-field">Zip Code: <span class="underline"></span></div>
+        <div class="form-field">Phone Number: <span class="underline"></span></div>
+        <div class="form-field">Fax Number: <span class="underline"></span></div>
+        <div class="form-field">Email Address: <span class="underline"></span></div>
+
+        <p>Non-Refundable application fee, as specified in SCE's Rule 21 tariff and Sections 2 and 3 above, is required to complete this Pre-Application Report Request.</p>
+
+        <p>This Pre-Application Report Request and the processing fee shall be submitted either electronically or in hard copy form with attachments to:</p>
+
+        <div class="subsection">
+            Grid Interconnection & Contract Development<br>
+            Southern California Edison Company<br>
+            2244 Walnut Grove Avenue<br>
+            PO Box 945<br>
+            Rosemead, CA 91770<br>
+            Email: rule21@sce.com<br>
+            Phone: (626) 302-3688
+        </div>
+    </div>
+
+    <!-- Page 8 -->
+    <div class="page-break">
+        <div class="header">
+            Form 14-922 8<br>
+            July 2016
+        </div>
+
+        <p>I understand that the contents of the Pre-Application Report are confidential and shall not be disclosed to anyone who is not an employee or other representative (including consultants) of the company or corporation I am employed with.</p>
+
+        <p>This Pre-Application Report Request is submitted by:</p>
+
+        <div class="form-field">Legal name of applicant: <span class="underline"></span></div>
+        <div class="form-field">By (signature): <span class="underline"></span></div>
+        <div class="form-field">Name (type or print): <span class="underline"></span></div>
+        <div class="form-field">Title: <span class="underline"></span></div>
+        <div class="form-field">Date: <span class="underline"></span></div>
+        <div class="form-field">Phone Number: <span class="underline"></span></div>
+    </div>
+</body>
+</html>
