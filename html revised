@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 14-922 - Rule 21 Pre-Application Report Request</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 0.75in;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 11pt;
+            line-height: 1.3;
+            margin: 0;
+            padding: 20px;
+            max-width: 8.5in;
+            margin: 0 auto;
+        }
+        
+        .page {
+            page-break-after: always;
+            margin-bottom: 50px;
+        }
+        
+        .page:last-child {
+            page-break-after: avoid;
+        }
+        
+        .header-right {
+            text-align: right;
+            font-size: 10pt;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 12pt;
+            margin: 15px 0 10px 0;
+            font-weight: bold;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        
+        table.data-table {
+            border: 1px solid #000;
+        }
+        
+        table.data-table th {
+            background-color: #e0e0e0;
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 10pt;
+        }
+        
+        table.data-table td {
+            border: 1px solid #000;
+            padding: 5px;
+            font-size: 10pt;
+            vertical-align: top;
+        }
+        
+        .checkbox {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 1px solid #000;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        
+        .section-number {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        
+        .subsection {
+            margin-left: 20px;
+            margin-bottom: 5px;
+        }
+        
+        .form-field {
+            border-bottom: 1px solid #000;
+            display: inline-block;
+            min-width: 200px;
+            margin-bottom: 10px;
+        }
+        
+        .form-label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        
+        .footnote {
+            font-size: 9pt;
+            margin-top: 10px;
+        }
+        
+        .margin-mark {
+            position: absolute;
+            left: -30px;
+            font-size: 9pt;
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        ul {
+            margin: 5px 0 5px 40px;
+            padding: 0;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        .signature-block {
+            margin-top: 30px;
+        }
+        
+        .signature-line {
+            border-bottom: 1px solid #000;
+            width: 300px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Page 4 -->
+    <div class="page">
+        <div class="header-right">Form 14-922 2<br>July 2016</div>
+        
+        <h2>2. OPTIONAL STANDARD AND ENHANCED PRE-APPLICATION REPORTS</h2>
+        
+        <p>Applicant may request one or a combination of the following Pre-Application Report packages:</p>
+        
+        <ul>
+            <li><strong>Standard Pre-Application Report</strong> – Provides a readily available level of Distribution System data that requires little to no analysis on the part of distribution engineer providing the report.</li>
+            <li><strong>Enhanced Pre-Application Report - Primary Service Package</strong> – Provides a detailed level of Distribution System data that requires analysis on the part of the distribution engineer providing the report.</li>
+            <li><strong>Enhanced Pre-Application Report - Behind the Meter Interconnection Package</strong> – Provides distribution system level data that is relevant to a "Behind the Meter" interconnection, as well as Secondary or Primary service characteristics that are confirmed in the field.</li>
+        </ul>
+        
+        <p>Because the Enhanced Pre-Application Report Request is for data incremental to the Standard Pre-Application Report Request, an Applicant submitting an Enhanced Pre-Application Report Request shall concurrently submit a Standard Pre-Application Report Request. Requests that exclude the Standard Pre-Application Report and select one or both of the Enhanced Pre-Application Report packages shall be assessed an additional non-refundable fee of $100 to account for processing.</p>
+        
+        <h2>A. Standard Pre-Application Report Package</h2>
+        
+        <table class="data-table">
+            <tr>
+                <th>Data Included</th>
+                <th>Cost</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>
+                    1. Total capacity (MW) of substation/area bus or bank and of circuit likely to serve the proposed site.<br>
+                    2. Allocated capacity (MW) of substation/area bus or bank and circuit likely to serve proposed site.<br>
+                    3. Queued capacity (MW) of substation/area bus or bank and circuit likely to serve proposed site.<br>
+                    4. Available capacity (MW) of substation/area bus or bank and circuit most likely to serve proposed site.<br>
+                    5. Substation nominal distribution voltage or transmission nominal voltage if applicable.<br>
+                    6. Nominal distribution circuit voltage at the proposed site.<br>
+                    7. Approximate circuit distance between the proposed site and the substation.<br>
+                    8. Relevant line Section(s) peak load estimate, and minimum load, when available.<br>
+                    9. Number of protective devices and number of voltage regulating devices between the proposed site and the substation/area.<br>
+                    10. Whether or not three-phase power is available at the site.<br>
+                    11. Limiting conductor rating from proposed Point of Interconnection to distribution substation.<br>
+                    12. Based on proposed Point of Interconnection, existing or known constraints such as, but not limited to, electrical dependencies at that location, short circuit interrupting capacity issues, power quality or stability issues on the circuit, capacity constraints, or secondary networks.<br>
+                    13. Nominal Distribution circuit voltage and wiring configuration
+                </td>
+                <td>$300</td>
+                <td>Within 10 Business Days of receipt of pre-application report request.<br><br>(Timeline is 30 Business Days if requested with Behind the Meter Interconnection Package)</td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- Page 5 -->
+    <div class="page">
+        <div class="header-right">Form 14-922 3<br>July 2016</div>
+        
+        <h2>B. Enhance Pre-Application Report - Primary Service Package</h2>
+        
+        <table class="data-table">
+            <tr>
+                <th>Data Included</th>
+                <th>Cost</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>
+                    Nominal Distribution circuit voltage and wiring configuration<br>
+                    1. Relevant line section(s) absolute minimum load, and minimum load during the 10 AM – 4 PM period (provided when SCADA data is available).<br>
+                    2. Existing upstream protection including:<br>
+                    <div style="margin-left: 20px;">
+                        a. Device type (Fuse Breaker, Recloser)<br>
+                        b. Device controller (device make/model ex: 50E/50T)<br>
+                        c. Phase settings [IEEE Curve, Lever, Min Trip (A), Inst Trip(A)]<br>
+                        d. Ground settings [IEEE Curve, Lever, Min Trip (A), Inst Trip(A)]<br>
+                        e. Rated continuous current<br>
+                        f. Short Circuit interrupting capability<br>
+                        g. Confirm if the device is capable of bi-directional operation<br>
+                    </div>
+                    3. Provide the Available Fault Current at the proposed point of interconnection including any existing distributed generation fault contribution.
+                </td>
+                <td>$225</td>
+                <td>Within 10 Business Days of receipt of pre-application report request.<br><br>(Timeline is 30 Business Days if requested with Behind the Meter Interconnection Package)</td>
+            </tr>
+        </table>
+        
+        <h2>C. Enhanced Pre-Application Report – Behind the Meter Interconnection Package<sup>1</sup></h2>
+        
+        <table class="data-table">
+            <tr>
+                <th>Data Included</th>
+                <th>Cost</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>
+                    1. Relevant line section(s) absolute minimum load, and minimum load during the 10 AM – 4 PM period (provided when SCADA data is available)<br>
+                    2. Transformer data<br>
+                    <div style="margin-left: 20px;">
+                        a. Existing service transformer kVA rating<br>
+                        b. Primary Voltage and Secondary Voltage rating<br>
+                        c. Configuration on both Primary and Secondary Side (i.e., Delta, Wye, Grounded Wye, etc.)<br>
+                        d. Characteristic impedance (%Z)<br>
+                        e. Confirm if the transformer is serving only one customer or multiple customers<br>
+                        f. Provide the Available Fault Current on both the Primary and Secondary Side<br>
+                    </div>
+                    3. Secondary Service Characteristics<br>
+                    <div style="margin-left: 20px;">
+                        a. Conductor type (AL or CU) and size (AWG)<br>
+                        b. Conductor insulation type<br>
+                        c. Number of parallel runs<br>
+                        d. Confirm if the existing secondary service is 3-wire or 4-wire.<br>
+                    </div>
+                    4. Primary Service Characteristics<br>
+                    <div style="margin-left: 20px;">
+                        a. Conductor type (AL or CU) and size (AWG)<br>
+                        b. Conductor insulation type<br>
+                        c. Number of parallel runs<br>
+                        d. Confirm if the existing primary service is 3-wire or 4-wire.
+                    </div>
+                </td>
+                <td>$800</td>
+                <td>Within 30 Business Days of receipt of pre-application report request</td>
+            </tr>
+        </table>
+        
+        <div class="footnote">
+            <sup>1</sup> Customer authorization will be required for release of customer specific information by submittal of Authorization to Receive Customer Information or Act on a Customer's Behalf, Form 14-796. If customer authorization is required, Distribution Provider will notify Applicant if additional processing time will be required.
+        </div>
+    </div>
+    
+    <!-- Page 6 -->
+    <div class="page">
+        <div class="header-right">Form 14-922 4<br>July 2016</div>
+        
+        <h2>3. PRE-APPLICATION REQUESTED SERVICE</h2>
+        
+        <table class="data-table">
+            <tr>
+                <th>Report Name</th>
+                <th>Processing Time (Business Days)</th>
+                <th>Selection</th>
+                <th>Application Fee</th>
+            </tr>
+            <tr>
+                <td>Standard Pre-Application Report</td>
+                <td>10<sup>2</sup></td>
+                <td><span class="checkbox"></span></td>
+                <td>$300</td>
+            </tr>
+            <tr>
+                <td>Enhanced Pre-Application Report – Primary Service Package</td>
+                <td>10<sup>3</sup></td>
+                <td><span class="checkbox"></span></td>
+                <td>$225</td>
+            </tr>
+            <tr>
+                <td>Enhanced Pre-Application Report – Behind the Meter Package</td>
+                <td>30</td>
+                <td><span class="checkbox"></span></td>
+                <td>$800</td>
+            </tr>
+            <tr>
+                <td>Combined Enhanced Pre-Application Report - Primary Service and Behind the Meter Interconnection Packages</td>
+                <td>30</td>
+                <td><span class="checkbox"></span></td>
+                <td>$1,025</td>
+            </tr>
+            <tr>
+                <td>Processing Fee if Standard Pre-Application Report Request is not submitted with either Enhanced Pre-Application Report Packages<sup>4</sup></td>
+                <td>N/A</td>
+                <td><span class="checkbox"></span></td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: right;"><strong>Total Pre-Application Report Request Fee</strong></td>
+                <td style="border-bottom: 2px solid #000;"></td>
+            </tr>
+        </table>
+        
+        <h2>4. PROJECT INFORMATION</h2>
+        
+        <h2>A. Project Type</h2>
+        
+        <p>This Pre-Application Report Request is for (check only one):</p>
+        <div style="margin-left: 20px;">
+            <p><span class="checkbox"></span> A proposed new Generating Facility.</p>
+            <p><span class="checkbox"></span> An increase in the generating capacity or a Material Modification of an existing Generating Facility.</p>
+        </div>
+        
+        <p>This Pre-Application Report Request is for (check only one):</p>
+        <div style="margin-left: 20px;">
+            <p><span class="checkbox"></span> A project that will export power to the SCE system.</p>
+            <p><span class="checkbox"></span> A project that will not export power to the SCE system.</p>
+        </div>
+        
+        <h2>B. Applicant provides the following information (when available):</h2>
+        
+        <p>Approximate proposed Point of Interconnection. The proposed Point of</p>
+        
+        <div class="footnote">
+            <sup>2</sup> Timeline is 30 Business Days if requested with Behind the Meter Interconnection Package<br>
+            <sup>3</sup> Timeline is 30 Business Days if requested with Behind the Meter Interconnection Package<br>
+            <sup>4</sup> The Enhanced Pre-Application Report Request shall be submitted in parallel with the Standard Pre-Application Report. Requests that exclude the Standard Pre-Application Report and select only one or both of the Enhanced Pre-Application Report packages shall be assessed an additional non-refundable fee of $100
+        </div>
+    </div>
+    
+    <!-- Page 7 -->
+    <div class="page">
+        <div class="header-right">Form 14-922 5<br>July 2016</div>
+        
+        <p>Interconnection shall be defined by latitude and longitude, site map, street address, utility equipment number (e.g. pole number), meter number, account number or some combination of the above sufficient to clearly identify the location of the Point of Interconnection. In the case of an existing Generating Facility, the name and specific location, including the county, of the existing Generating Facility. When requesting the Behind the Meter Interconnection Package, request must include meter number and account number;</p>
+        
+        <p><span class="form-label">Project Name:</span> <span class="form-field" style="width: 400px;"></span></p>
+        
+        <p><strong>Project Location:</strong></p>
+        
+        <p><span class="form-label">Street Address:</span> <span class="form-field" style="width: 400px;"></span></p>
+        
+        <p><span class="form-label">City:</span> <span class="form-field" style="width: 200px;"></span></p>
+        
+        <p><span class="form-label">County:</span> <span class="form-field" style="width: 200px;"></span></p>
+        
+        <p><span class="form-label">Zip Code:</span> <span class="form-field" style="width: 100px;"></span></p>
+        
+        <p><span class="form-label">Latitude (in degrees/minutes/seconds OR 6 decimal places):</span> <span class="form-field" style="width: 250px;"></span></p>
+        
+        <p><span class="form-label">Longitude (in degrees/minutes/seconds OR 6 decimal places):</span> <span class="form-field" style="width: 250px;"></span></p>
+        
+        <p><span class="form-label">Utility Equipment Number [nearest one (ex. pole number 1234567E, transformer number P1234567)]:</span> <span class="form-field" style="width: 400px;"></span></p>
+        
+        <p><span class="form-label">Meter Number<sup>5</sup> (ex. V123N-456789):</span> <span class="form-field" style="width: 200px;"></span></p>
+        
+        <p><span class="form-label">Account Number<sup>5</sup> (ex. 123456789):</span> <span class="form-field" style="width: 200px;"></span></p>
+        
+        <p><span class="form-label">Proposed Nominal Service Voltage and Configuration:</span> <span class="form-field" style="width: 300px;"></span><br>
+        <span style="font-size: 10pt;">(Examples: 240V 3-wire 1∅, 480V 4-wire 3∅, 12kV 3-wire 1∅, etc.)</span></p>
+        
+        <h2>C. Attach copy of site map for proposed project. Site map should show:</h2>
+        <ul>
+            <li>True north</li>
+            <li>Proposed project location, including general area of project</li>
+            <li>Proposed service point location</li>
+            <li>Major roads, streets and/or highways</li>
+        </ul>
+        
+        <div class="footnote">
+            <sup>5</sup> Information required for Behind the Meter Interconnection Package
+        </div>
+    </div>
+    
+    <!-- Page 8 -->
+    <div class="page">
+        <div class="header-right">Form 14-922 6<br>July 2016</div>
+        
+        <h2>D. Generation Technology</h2>
+        
+        <p><strong>Combustion Engine Generation</strong></p>
+        <table class="data-table">
+            <tr>
+                <th>Type</th>
+                <th>Size (Total kW)</th>
+                <th>Fuel Type (N-Gas, Diesel, Biogas)</th>
+            </tr>
+            <tr>
+                <td><span class="checkbox"></span>Reciprocating Engine</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span class="checkbox"></span>Gas Turbine</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span class="checkbox"></span>Other (Specify) _______________</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <p><strong>Inverter Based Generation</strong></p>
+        <table class="data-table">
+            <tr>
+                <th>Type</th>
+                <th>Size (Total kW)</th>
+                <th>Fuel Type (N-Gas, Diesel, Biogas)</th>
+            </tr>
+            <tr>
+                <td><span class="checkbox"></span>Photovoltaic</td>
+                <td></td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td><span class="checkbox"></span>Battery</td>
+                <td></td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td><span class="checkbox"></span>Fuel Cell</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span class="checkbox"></span>Other (Specify) _______________</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        
+        <p><strong>Other Generation</strong></p>
+        <table class="data-table">
+            <tr>
+                <th>Type</th>
+                <th>Size (Total kW)</th>
+                <th>Fuel Type (N-Gas, Diesel, Biogas)</th>
+            </tr>
+            <tr>
+                <td><span class="checkbox"></span>Wind</td>
+                <td></td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td><span class="checkbox"></span>Steam Turbine</td>
+                <td></td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td><span class="checkbox"></span>Hydro Turbine</td>
+                <td></td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td><span class="checkbox"></span>Other (Specify) _______________</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- Page 9 -->
+    <div class="page">
+        <div class="header-right">Form 14-922 7<br>July 2016</div>
+        
+        <h2>5. OTHER INFORMATION</h2>
+        
+        <p>Name, address, telephone number, and e-mail address of Applicant (primary person who will be contacted);</p>
+        
+        <p><span class="form-label">Name:</span> <span class="form-field" style="width: 400px;"></span></p>
+        
+        <p><span class="form-label">Title:</span> <span class="form-field" style="width: 400px;"></span></p>
+        
+        <p><span class="form-label">Company Name:</span> <span class="form-field" style="width: 400px;"></span></p>
+        
+        <p><span class="form-label">Street Address:</span> <span class="form-field" style="width: 400px;"></span></p>
+        
+        <p><span class="form-label">City, State:</span> <span class="form-field" style="width: 400px;"></span></p>
+        
+        <p><span class="form-label">Zip Code:</span> <span class="form-field" style="width: 100px;"></span></p>
+        
+        <p><span class="form-label">Phone Number:</span> <span class="form-field" style="width: 200px;"></span></p>
+        
+        <p><span class="form-label">Fax Number:</span> <span class="form-field" style="width: 200px;"></span></p>
+        
+        <p><span class="form-label">Email Address:</span> <span class="form-field" style="width: 400px;"></span></p>
+        
+        <p>Non-Refundable application fee, as specified in SCE's Rule 21 tariff and Sections 2 and 3 above, is required to complete this Pre-Application Report Request.</p>
+        
+        <p>This Pre-Application Report Request and the processing fee shall be submitted either electronically or in hard copy form with attachments to:</p>
+        
+        <div style="margin-left: 40px;">
+            <p>Grid Interconnection & Contract Development<br>
+            Southern California Edison Company<br>
+            2244 Walnut Grove Avenue<br>
+            PO Box 945<br>
+            Rosemead, CA 91770</p>
+            
+            <p>Email: rule21@sce.com<br>
+            Phone: (626) 302-3688</p>
+        </div>
+    </div>
+    
+    <!-- Page 10 -->
+    <div class="page">
+        <div class="header-right">Form 14-922 8<br>July 2016</div>
+        
+        <p>I understand that the contents of the Pre-Application Report are confidential and shall not be disclosed to anyone who is not an employee or other representative (including consultants) of the company or corporation I am employed with.</p>
+        
+        <p style="margin-top: 30px;">This Pre-Application Report Request is submitted by:</p>
+        
+        <p><span class="form-label">Legal name of applicant:</span> <span class="form-field" style="width: 400px;"></span></p>
+        
+        <p style="margin-top: 30px;"><span class="form-label">By (signature):</span> <span class="form-field" style="width: 400px;"></span></p>
+        
+        <p><span class="form-label">Name (type or print):</span> <span class="form-field" style="width: 400px;"></span></p>
+        
+        <p><span class="form-label">Title:</span> <span class="form-field" style="width: 400px;"></span></p>
+        
+        <p><span class="form-label">Date:</span> <span class="form-field" style="width: 200px;"></span></p>
+        
+        <p><span class="form-label">Phone Number:</span> <span class="form-field" style="width: 200px;"></span></p>
+    </div>
+</body>
+</html>
