@@ -1,0 +1,12 @@
+app.beginPriv();
+
+// work back-to-front so index positions don’t shift
+for (var i = this.numFields - 1; i >= 0; i--) {
+  var oldName = this.getNthFieldName(i);           // current name
+  var newName = oldName.replace(/\s+/g, "");       // remove spaces
+  if (oldName !== newName && !this.getField(newName)) {
+      this.renameField(oldName, newName);          // <-- universal rename call
+  }
+}
+
+app.endPriv();
